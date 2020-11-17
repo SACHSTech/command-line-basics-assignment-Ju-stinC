@@ -1,1 +1,46 @@
 
+OpenJDK Runtime Environment (build 11.0.6+10-post-Ubuntu-1ubuntu118.04.1)
+ pwd
+/home/runner/command-line-basics-assignment-Ju-stinC
+ cd LinuxExercise
+bash: cd: LinuxExercise: No such file or directory
+ mkdir LinuxExercise
+ ls
+LinuxExercise  README.md  TerminalSession.txt
+ cd LinuxExercise
+ touch myfile.txt
+ echo this is my new file >> myfile.txt
+ cat myfile.txt
+this is my new file
+ cp myfile.txt myfile_copy.txt
+ ls
+myfile_copy.txt  myfile.txt
+ mv myfile_copy.txt myfile2.txt
+ ls
+myfile2.txt  myfile.txt
+ mv file2.txt ../myfile2.txt
+mv: cannot stat 'file2.txt': No such file or directory
+ mv myfile2.txt ../myfile2.txt
+ cd ..
+ pwd
+/home/runner/command-line-basics-assignment-Ju-stinC
+ ls
+LinuxExercise  myfile2.txt  README.md  TerminalSession.txt
+ cd LinuxExercise
+ ls
+myfile.txt
+ rm -r myfile.txt
+ rm -r Linux Exercise
+rm: cannot remove 'Linux': No such file or directory
+rm: cannot remove 'Exercise': No such file or directory
+ rm -r LinuxExercise
+rm: cannot remove 'LinuxExercise': No such file or directory
+ cd LinuxExercise
+bash: cd: LinuxExercise: No such file or directory
+ ls
+ cd ..
+ ls
+LinuxExercise  myfile2.txt  README.md  TerminalSession.txt
+ rmdir LinuxExercise
+ ls
+myfile2.txt  README.md  TerminalSession.txt
